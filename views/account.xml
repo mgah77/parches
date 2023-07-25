@@ -7,6 +7,9 @@
             <xpath expr="//field[@name='acteco_id']" position="attributes">
                 <attribute name="string">Actividad económica</attribute>
             </xpath>
+            <xpath expr="//page[@name='electronic_invoice']" position="attributes">
+                <attribute name="string">Factura electrónica</attribute>
+            </xpath>
         </field>
     </record>
 </odoo>
