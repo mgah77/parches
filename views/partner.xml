@@ -1,0 +1,12 @@
+<odoo>
+    <record model="ir.ui.view" id="view_inherit_partner_form">
+        <field name="name">res.partner.parche.inherit.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='city_id']" position="attributes">
+                <attribute name="required">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
