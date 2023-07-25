@@ -20,6 +20,7 @@
         "views/account_payment_inherit.xml",
         "views/partner.xml",
         "security/ir.model.access.csv",
+        "views/account.xml"
     ],
     'installable': True,
     'auto_install': False,
