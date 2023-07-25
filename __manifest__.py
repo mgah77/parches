@@ -2,7 +2,7 @@
 
 {
     'name': 'Parches',
-    'version': '1.51',
+    'version': '1.50.01',
     'category': 'General',
     'summary': '',
     'description': """
