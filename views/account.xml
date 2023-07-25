@@ -5,7 +5,7 @@
         <field name="inherit_id" ref="l10n_cl_fe.view_invoice_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='acteco_id']" position="attributes">
-                <attribute name="string">Giro</attribute>
+                <attribute name="string">Actividad económica</attribute>
             </xpath>
         </field>
     </record>
