@@ -7,6 +7,9 @@
             <xpath expr="//field[@name='city_id']" position="attributes">
                 <attribute name="required">1</attribute>
             </xpath>
+            <xpath expr="//field[@name='street']" position="attributes">
+                <attribute name="required">1</attribute>
+            </xpath>
         </field>
     </record>
 </odoo>
