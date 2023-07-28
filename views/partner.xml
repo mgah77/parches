@@ -5,13 +5,13 @@
         <field name="inherit_id" ref="l10n_cl_fe.view_partner_activity_inherit_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='city_id']" position="attributes">
-                <attribute name="required">1</attribute>
+                <attribute name="required">0</attribute>
             </xpath>
             <xpath expr="//field[@name='street']" position="attributes">
-                <attribute name="required">1</attribute>
+                <attribute name="required">0</attribute>
             </xpath>
             <xpath expr="//field[@name='document_number']" position="attributes">
-                <attribute name="required">1</attribute>
+                <attribute name="required">0</attribute>
             </xpath>
             <xpath expr="//field[@name='zip']" position="attributes">
                 <attribute name="help">Código Postal</attribute>
