@@ -61,8 +61,8 @@
             </xpath>          
             <xpath expr="//page[@name='accounting']" position="replace">                
             </xpath>
-            <xpath expr="//field[@name='property_payment_term_id']" position="groups">
-                <attribute name="default">parches.group_addon_credit</attribute>
+            <xpath expr="//field[@name='property_payment_term_id']" position="attributes">
+                <attribute name="groups">parches.group_addon_credit</attribute>
             </xpath>   
         </field>
     </record>
