@@ -49,9 +49,7 @@
             <xpath expr="//field[@name='responsability_id']" position="attributes">
                 <attribute name="string">Responsabilidad</attribute>
             </xpath>    
-            <xpath expr="//field[@name='property_payment_term_id']" position="attributes">
-                <attribute name="default">Pago Inmediato</attribute>
-            </xpath>
+            
 
         </field>
     </record>
