@@ -50,7 +50,7 @@
                 <attribute name="string">Responsabilidad</attribute>
             </xpath>    
             <xpath expr="//field[@name='property_payment_term_id']" position="attributes">
-                <attribute name="default">Immediate Payment</attribute>
+                <attribute name="default">Pago Inmediato</attribute>
             </xpath>
 
         </field>
