@@ -48,8 +48,17 @@
             </xpath>    
             <xpath expr="//field[@name='responsability_id']" position="attributes">
                 <attribute name="string">Responsabilidad</attribute>
-            </xpath>    
-            
+            </xpath>              
+
+        </field>
+    </record>
+     <record model="ir.ui.view" id="view_partner_parche_property_form">
+        <field name="name">res.partner.parche.property.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='fiscal_information']" position="replace">                
+            </xpath>          
 
         </field>
     </record>
