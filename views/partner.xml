@@ -36,7 +36,7 @@
             </xpath>
             <xpath expr="//field[@name='document_type_id']" position="replace">               
             </xpath>
-            <xpath expr="//field[@name='street']" position="before">
+            <xpath expr="//label[@for='street']" position="before">
                 <field name="document_type_id"/>
             </xpath>
             <xpath expr="//field[@name='document_type_id']" position="attributes">
