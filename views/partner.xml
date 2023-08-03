@@ -34,6 +34,9 @@
             <xpath expr="//field[@name='message_bounce']" position="replace">
                 <field name="credit_limit" groups="parches.group_addon_credit"/>
             </xpath>
+            <xpath expr="//field[@name='credit_limit']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
             
 
         </field>
