@@ -12,10 +12,7 @@
             </xpath>            
             <xpath expr="//field[@name='zip']" position="attributes">
                 <attribute name="invisible">1</attribute>
-            </xpath>  
-            <xpath expr="//field[@name='responsability_id']" position="attributes">
-                <attribute name="string">Responsabilidad</attribute>
-            </xpath>
+            </xpath>              
             <xpath expr="//field[@name='category_id']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
@@ -33,19 +30,25 @@
             </xpath>
             <xpath expr="//field[@name='document_number']" position="replace">               
             </xpath>
+            <xpath expr="//field[@name='responsability_id']" position="replace">               
+            </xpath>
 
             <xpath expr="//label[@for='street']" position="before">
                 <field name="document_type_id"/>
                 <field name="document_number"/>
+                <field name="responsability_id"/>
             </xpath>
-            
+
             <xpath expr="//field[@name='document_type_id']" position="attributes">
                 <attribute name="string">Tipo de documento</attribute>
             </xpath>   
             <xpath expr="//field[@name='document_number']" position="attributes">
                 <attribute name="string">Número de documento</attribute>
                 <attribute name="required">1</attribute>
-            </xpath>        
+            </xpath>    
+            <xpath expr="//field[@name='responsability_id']" position="attributes">
+                <attribute name="string">Responsabilidad</attribute>
+            </xpath>    
             
 
         </field>
