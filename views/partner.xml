@@ -60,7 +60,10 @@
             <xpath expr="//group[@name='fiscal_information']" position="replace">                
             </xpath>          
             <xpath expr="//page[@name='accounting']" position="replace">                
-            </xpath>  
+            </xpath>
+            <xpath expr="//field[@name='property_payment_term_id']" position="attributes">
+                <attribute name="default">3</attribute>
+            </xpath>   
         </field>
     </record>
 </odoo>
