@@ -59,7 +59,8 @@
         <field name="arch" type="xml">
             <xpath expr="//group[@name='fiscal_information']" position="replace">                
             </xpath>          
-
+            <xpath expr="//page[@name='accounting']" position="replace">                
+            </xpath>  
         </field>
     </record>
 </odoo>
