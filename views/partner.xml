@@ -15,10 +15,7 @@
             </xpath>
             <xpath expr="//field[@name='zip']" position="attributes">
                 <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='document_type_id']" position="attributes">
-                <attribute name="string">Tipo de documento</attribute>
-            </xpath>
+            </xpath>            
             <xpath expr="//field[@name='document_number']" position="attributes">
                 <attribute name="string">Número de documento</attribute>
             </xpath>
@@ -37,7 +34,14 @@
             <xpath expr="//field[@name='credit_limit']" position="attributes">
                 <attribute name="invisible">0</attribute>
             </xpath>
-            
+            <xpath expr="//field[@name='document_type_id']" position="replace">               
+            </xpath>
+            <xpath expr="//field[@name='street']" position="before">
+                <field name="document_type_id"/>
+            </xpath>
+            <xpath expr="//field[@name='document_type_id']" position="attributes">
+                <attribute name="string">Tipo de documento</attribute>
+            </xpath>          
 
         </field>
     </record>
