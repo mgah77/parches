@@ -4,9 +4,6 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="l10n_cl_fe.view_partner_activity_inherit_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='company_type']" position="attributes">
-                <attribute name="default">company</attribute>
-            </xpath>
             <xpath expr="//field[@name='city_id']" position="attributes">
                 <attribute name="required">1</attribute>
             </xpath>
