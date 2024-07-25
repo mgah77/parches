@@ -21,7 +21,8 @@
         "views/partner.xml",
         "security/ir.model.access.csv",
         "views/account.xml",
-        "views/sale.xml"
+        "views/sale.xml",
+        "views/menu_config"
     ],
     'installable': True,
     'auto_install': False,
