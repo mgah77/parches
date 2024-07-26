@@ -2,7 +2,7 @@
 <data>
 
     <record id="account.menu_finance_configuration" model="ir.ui.menu"> <!-- facturando/configuracion -->
-        <field name="groups_id" eval="[(6, 0, [ref('parches_insumar.group_config')])]"/>
+        <field name="groups_id" eval="[(6, 0, [ref('parches.group_config')])]"/>
     </record>
 
 </data>
