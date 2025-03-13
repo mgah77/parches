@@ -20,9 +20,9 @@
 
     <!-- restricciones al grupo de bodega -->
 
-    <record id="stock.menu_warehousesale_report" model="ir.ui.menu"> <!-- inventerio/configuracionanalisis informes -->
-    <field name="groups_id" eval="[(4, ref('parches.group_bodega'))]"/>
-</record>
+    <record id="stock.menu_warehouse_report" model="ir.ui.menu"> <!-- inventerio/configuracionanalisis informes -->
+        <field name="groups_id" eval="[(4, ref('parches.group_bodega'))]"/>
+    </record>
 
 </data>
 </odoo>
