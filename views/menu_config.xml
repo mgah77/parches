@@ -33,7 +33,7 @@
     </record>
 
     <record id="stock_forecast.menu_stock_forecast" model="ir.ui.menu"> <!-- inventario/analisis -->
-        <field name="groups_id" eval="[(6, 0, [ref('parches.group_config')])]"/>
+        <field name="groups_id" eval="[(6, 0, [ref('parches.group_restric')])]"/>
     </record>
         
 
