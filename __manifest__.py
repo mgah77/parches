@@ -11,7 +11,7 @@
        """,
     'author' : 'M.Gah',
     'website': '',
-    'depends': ['stock','base','sale','account','l10n_cl_fe','contacts'],
+    'depends': ['stock','base','sale','account','l10n_cl_fe','contacts','stock_forecast'],
     'data': [
 	    "security/groups.xml",
 	    "views/menu_informe.xml",
