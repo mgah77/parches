@@ -22,7 +22,8 @@
         "security/ir.model.access.csv",
         "views/account.xml",
         "views/sale.xml",
-        "views/menu_config.xml"
+        "views/menu_config.xml",
+        "views/hr.xml"
     ],
     'installable': True,
     'auto_install': False,
