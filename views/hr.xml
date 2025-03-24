@@ -6,8 +6,11 @@
         <field name="arch" type="xml">
             <xpath expr="//page[@name='hr_settings']" position="attributes">
                 <attribute name="groups">parches.group_config</attribute>
+            </xpath> 
+            <xpath expr="//group[@name='work_permit']" position="replace">
             </xpath>        
-
+            <xpath expr="//field[@name='passport_id']" position="replace">
+            </xpath>
         </field>
     </record>
 
