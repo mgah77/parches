@@ -23,7 +23,8 @@
         "views/account.xml",
         "views/sale.xml",
         "views/menu_config.xml",
-        "views/hr.xml"
+        "views/hr.xml",
+        "views/stock.xml",
     ],
     'installable': True,
     'auto_install': False,
