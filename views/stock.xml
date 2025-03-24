@@ -2,7 +2,7 @@
     <record model="ir.ui.view" id="view_electronic_stock_inherit_form">
         <field name="name">parche.stock_electronic.inherit.form</field>
         <field name="model">stock.picking</field>
-        <field name="inherit_id" ref="l10n_cl_stock_picking.l10n_cl.stock_picking.form"/>
+        <field name="inherit_id" ref="l10n_cl_stock_picking.view_electronic_stock_picking_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='use_documents']" position="attributes">
                 <attribute name="string">Usar Guia de Despacho</attribute>
