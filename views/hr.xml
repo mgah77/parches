@@ -18,9 +18,7 @@
                     <group name="ausencias" string="Ausencias">
                       
                     </group>
-                    <group name="km_home_work" string="Kilometraje Casa-Trabajo">
-
-                    </group>
+                    
                 </page>
             </xpath>  
             <xpath expr="//group[@name='work_permit']" position="replace">
