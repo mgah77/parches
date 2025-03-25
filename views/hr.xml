@@ -6,7 +6,23 @@
         <field name="arch" type="xml">
             <xpath expr="//page[@name='hr_settings']" position="attributes">
                 <attribute name="groups">parches.group_config</attribute>
-            </xpath> 
+            </xpath>
+            <xpath expr="//page[@name='hr_settings']" position="after">
+                <page string="Remuneraciones">
+                    <group name="cotizaciones" string="Cotizaciones">
+                        
+                    </group>
+                    <group name="sueldos" string="Sueldos">
+                       
+                    </group>
+                    <group name="ausencias" string="Ausencias">
+                      
+                    </group>
+                    <group name="km_home_work" string="Kilometraje Casa-Trabajo">
+
+                    </group>
+                </page>
+            </xpath>  
             <xpath expr="//group[@name='work_permit']" position="replace">
             </xpath>        
             <xpath expr="//field[@name='passport_id']" position="replace">
