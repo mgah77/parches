@@ -19,16 +19,12 @@
                     
                 </page>
             </xpath>  
-            <xpath expr="//group[@name='Education']" position="after">
-          
-                    
+            <xpath expr="//group[@name='work_permit']" position="after">        
                     <group name="cotizaciones" string="Cotizaciones">
                             <field name="afp"/>
                             <field name="salud"/>
                             <field name="caja"/>
-                            
                     </group>    
-                   
             </xpath>  
             <xpath expr="//group[@name='work_permit']" position="replace">
             </xpath>        
