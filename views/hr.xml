@@ -19,7 +19,7 @@
                     
                 </page>
             </xpath>  
-            <xpath expr="//group[@string='Education']" position="after">
+            <xpath expr="//group[@name='Education']" position="after">
           
                     
                     <group name="cotizaciones" string="Cotizaciones">
