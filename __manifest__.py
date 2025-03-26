@@ -25,7 +25,6 @@
         "views/menu_config.xml",
         "views/hr.xml",
         "views/stock.xml",
-        "i18n/es_CL.csv",
     ],
     'installable': True,
     'auto_install': False,
