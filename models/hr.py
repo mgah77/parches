@@ -33,3 +33,5 @@ class ParcheHR(models.Model):
         ('araucana','CCAF La Araucana'),
         ('heroes','CCAF Los Heroes'),
         ('18','CCAF 18 de Septiembre')], 'Caja de Compensacion')
+
+    

@@ -13,9 +13,7 @@
                     <group name="sueldos" string="Sueldos">
                        
                     </group>
-                    <group name="ausencias" string="Ausencias">
-                      
-                    </group>
+                   
                     
                 </page>
             </xpath>  
