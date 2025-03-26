@@ -9,9 +9,7 @@
             </xpath>
             <xpath expr="//page[@name='hr_settings']" position="after">
                 <page string="Remuneraciones">
-                    <group name="cotizaciones" string="Cotizaciones">
-                        
-                    </group>
+                    
                     <group name="sueldos" string="Sueldos">
                        
                     </group>
@@ -20,6 +18,17 @@
                     </group>
                     
                 </page>
+            </xpath>  
+            <xpath expr="//group[@string='Education']" position="after">
+          
+                    
+                    <group name="cotizaciones" string="Cotizaciones">
+                            <field name="afp"/>
+                            <field name="salud"/>
+                            <field name="caja"/>
+                            
+                    </group>    
+                   
             </xpath>  
             <xpath expr="//group[@name='work_permit']" position="replace">
             </xpath>        
