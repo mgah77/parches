@@ -7,8 +7,14 @@
             <xpath expr="//field[@name='acteco_id']" position="attributes">
                 <attribute name="string">Actividad económica</attribute>
             </xpath>
+
+            <xpath expr="//field[@name='product_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
        
         </field>
     </record>
+
+
 
 </odoo>
