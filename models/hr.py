@@ -34,4 +34,6 @@ class ParcheHR(models.Model):
         ('heroes','CCAF Los Heroes'),
         ('18','CCAF 18 de Septiembre')], 'Caja de Compensacion')
 
+    sueldo = fields.Integer()
+    bono_prod = fields.Integer()
     
