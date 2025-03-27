@@ -11,7 +11,7 @@
                 <page string="Remuneraciones">
                     
                     <group name="sueldo" string="Sueldo">
-                        <field name="base"/>
+                        <field name="sueldo"/>
                     </group>
                     <group name="bono" string="Bonos">
                         <field name="bono_prod"/>
