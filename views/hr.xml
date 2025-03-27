@@ -23,7 +23,7 @@
                               <field name="bono_movil"/>
                                <field name="bono_colac"/>
                                 <field name="bono_estud"/>
-                                 <field name="bono_estud_esp"/>
+                                <field name="bono_estud_esp"/>
                     </group>                  
                    <group name="capa" string="Capacitaciones">
                         <field name="capac"/>
@@ -46,6 +46,10 @@
             <xpath expr="//field[@name='address_id']" position="replace">            
             </xpath>
              <xpath expr="//field[@name='km_home_work']" position="replace">            
+            </xpath>
+            <xpath expr="//field[@name='resource_calendar_id']" position="replace">  
+                   <field name="jornada"/>
+                   <field name="horas"/>   
             </xpath>
         </field>
     </record>

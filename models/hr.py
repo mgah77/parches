@@ -46,3 +46,8 @@ class ParcheHR(models.Model):
     bono_estud = fields.Integer(string='Estudio')
     bono_estud_esp = fields.Integer(string='Estudio Especial')
     capac = fields.Html(string='Capacitaciones y/o Cursos')
+
+    jornada = fields.Selection([
+        ('completa','Completa'),
+        ('parcial','Parcial')], 'Jornada Laboral')
+    horas = fields.Integer('Horas Semanales')
