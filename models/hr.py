@@ -34,6 +34,15 @@ class ParcheHR(models.Model):
         ('heroes','CCAF Los Heroes'),
         ('18','CCAF 18 de Septiembre')], 'Caja de Compensacion')
 
-    sueldo = fields.Integer()
-    bono_prod = fields.Integer()
-    
+    sueldo = fields.Integer(string='Base')
+    bono_prod = fields.Integer(string='Producción')
+    bono_resp = fields.Integer(string='Responsabilidad')
+    bono_resp_taller = fields.Integer(string='Responsabilidad Taller')
+    bono_comi = fields.Integer(string='Comision Taller')
+    bono_punt = fields.Integer(string='Puntualidad')
+    bono_asist = fields.Integer(string='Asistencia')
+    bono_movil = fields.Integer(string='Movilizacion')
+    bono_colac = fields.Integer(string='Colacion')
+    bono_estud = fields.Integer(string='Estudio')
+    bono_estud_esp = fields.Integer(string='Estudio Especial')
+    capac = fields.Html(string='Capacitaciones y/o Cursos')
