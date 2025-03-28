@@ -6,6 +6,8 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='bank_account_id']" position="replace">
             </xpath>
+            <xpath expr="//field[@name='tz']" position="replace">
+            </xpath>
             <xpath expr="//page[@name='hr_settings']" position="attributes">
                 <attribute name="groups">parches.group_config</attribute>
             </xpath>
