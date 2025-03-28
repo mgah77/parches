@@ -4,14 +4,20 @@
         <field name="model">hr.employee</field>
         <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
+            <xpath expr="//field[@name='bank_account_id']" position="replace">
+            </xpath>
             <xpath expr="//page[@name='hr_settings']" position="attributes">
                 <attribute name="groups">parches.group_config</attribute>
             </xpath>
             <xpath expr="//page[@name='hr_settings']" position="after">
                 <page string="Remuneraciones">
-                    
+                    <group>
                     <group name="sueldo" string="Sueldo">
                         <field name="sueldo"/>
+                    </group>
+                    <group name="banco" string="Cuenta Bancaria">
+                    </group>
+                        <field name="bank_account_id"/>
                     </group>
                     <group name="bono" string="Bonos">
                         <field name="bono_prod"/>
