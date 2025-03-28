@@ -12,13 +12,15 @@
             <xpath expr="//page[@name='hr_settings']" position="after">
                 <page string="Remuneraciones">
                     <group>
-                    <group name="sueldo" string="Sueldo">
-                        <field name="sueldo"/>
+                        <group name="sueldo" string="Sueldo">
+                            <field name="sueldo"/>
+                        </group>
+                        <group name="banco" string="Cuenta Bancaria">
+                        </group>
+                            <field name="bank_account_id"/>
+                        </group>
                     </group>
-                    <group name="banco" string="Cuenta Bancaria">
-                    </group>
-                        <field name="bank_account_id"/>
-                    </group>
+                    <group>
                     <group name="bono" string="Bonos">
                         <field name="bono_prod"/>
                          <field name="bono_resp"/>
@@ -34,6 +36,7 @@
                    <group name="capa" string="Capacitaciones">
                         <field name="capac"/>
                     </group> 
+                    </group>
 
 
                 </page>
