@@ -16,26 +16,25 @@
                             <field name="sueldo"/>
                         </group>
                         <group name="banco" string="Cuenta Bancaria">
-                        </group>
                             <field name="bank_account_id"/>
                         </group>
                     </group>
                     <group>
-                    <group name="bono" string="Bonos">
-                        <field name="bono_prod"/>
-                         <field name="bono_resp"/>
-                          <field name="bono_resp_taller"/>
-                           <field name="bono_comi"/>
-                            <field name="bono_punt"/>
-                             <field name="bono_asist"/>
-                              <field name="bono_movil"/>
-                               <field name="bono_colac"/>
-                                <field name="bono_estud"/>
-                                <field name="bono_estud_esp"/>
-                    </group>                  
-                   <group name="capa" string="Capacitaciones">
-                        <field name="capac"/>
-                    </group> 
+                            <group name="bono" string="Bonos">
+                                <field name="bono_prod"/>
+                                <field name="bono_resp"/>
+                                <field name="bono_resp_taller"/>
+                                <field name="bono_comi"/>
+                                    <field name="bono_punt"/>
+                                    <field name="bono_asist"/>
+                                    <field name="bono_movil"/>
+                                    <field name="bono_colac"/>
+                                        <field name="bono_estud"/>
+                                        <field name="bono_estud_esp"/>
+                            </group>                  
+                            <group name="capa" string="Capacitaciones">
+                                <field name="capac"/>
+                            </group> 
                     </group>
 
 
