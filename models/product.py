@@ -3,8 +3,9 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class ProductTemplateInherit2(models.Model):  # ✅ Nombre de clase personalizado
-    _inherit = ['product.template', 'mail.thread']  # ✅ Corrección válida
+class ProductTemplateInherit2(models.Model):  
+    _inherit = 'product.template'
+    _name = False
 
     @api.multi
     def write(self, vals):
