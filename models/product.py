@@ -1,22 +1,19 @@
 from odoo import models, api, _
-import Datetime
 import logging
 
 _logger = logging.getLogger(__name__)
 
-class ProductTemplateInherit2(models.Model):  
-    _inherit = 'product.template'
-    _name = False
+class ProductTemplate(models.Model):
+    _inherit = 'product.template'  
 
+    _name = False  
+    
     @api.multi
     def write(self, vals):
-        _logger.info("WRITE personalizado ejecutado para product.template")
-        res = super(ProductTemplateInherit2, self).write(vals)
-        now = fields.Datetime.now()
-        formatted_time = now.strftime('%d/%m/%Y %H:%M:%S')         
+        res = super(ProductTemplate, self).write(vals)
         for record in self:
             record.message_post(
-                body=_("El usuario <b>%s</b> realizó cambios en este producto el <i>%s</i>.") % (self.env.user.name, formatted_time),
+                body=_("El usuario <b>%s</b> realizó cambios en este producto.") % self.env.user.name,
                 message_type="notification",
                 subtype="mail.mt_note"
             )
