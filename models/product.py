@@ -7,11 +7,12 @@ _logger = logging.getLogger(__name__)
 class ProductTemplateInherit2(models.Model):  # ✅ Nombre de clase personalizado
     _inherit = 'product.template' # ✅ Corrección válida
 
+    now = fields.datetime.now()
+
     @api.multi
     def write(self, vals):
         _logger.info("WRITE personalizado ejecutado para product.template")
-        res = super(ProductTemplateInherit2, self).write(vals)
-        now = fields.datetime.now()
+        res = super(ProductTemplateInherit2, self).write(vals)        
         formatted_time = now.strftime('%d/%m/%Y %H:%M:%S')
         for record in self:
             record.message_post(
