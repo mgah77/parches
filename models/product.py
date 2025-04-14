@@ -1,4 +1,5 @@
 from odoo import models, api, _
+from datetime import datetime
 import logging
 
 _logger = logging.getLogger(__name__)
@@ -10,7 +11,7 @@ class ProductTemplateInherit2(models.Model):  # ✅ Nombre de clase personalizad
     def write(self, vals):
         _logger.info("WRITE personalizado ejecutado para product.template")
         res = super(ProductTemplateInherit2, self).write(vals)
-        now = fields.Datetime.now()
+        now = fields.datetime.now()
         formatted_time = now.strftime('%d/%m/%Y %H:%M:%S')
         for record in self:
             record.message_post(
