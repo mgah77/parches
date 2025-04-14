@@ -4,19 +4,20 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class ProductTemplateInherit2(models.Model):  
+class ProductTemplate(models.Model):
     _inherit = 'product.template'
-    _name = False
+    _name = False  # Muy importante para evitar conflictos
 
     @api.multi
     def write(self, vals):
-        _logger.info("WRITE personalizado ejecutado para product.template")
-        res = super(ProductTemplateInherit2, self).write(vals)
+        res = super(ProductTemplate, self).write(vals)
         now = fields.Datetime.now()
-        formatted_time = now.strftime('%d/%m/%Y %H:%M:%S')         
+        formatted_time = now.strftime('%d/%m/%Y %H:%M:%S')  # Formato de fecha y hora
         for record in self:
+            modified_fields = ', '.join([field for field in vals.keys()])  # Nombres de los campos modificados
             record.message_post(
-                body=_("El usuario <b>%s</b> realizó cambios en este producto el <i>%s</i>.") % (self.env.user.name, formatted_time),
+                body=_("El usuario <b>%s</b> realizó cambios en los siguientes campos el <i>%s</i>: <b>%s</b>") % (
+                    self.env.user.name, formatted_time, modified_fields),
                 message_type="notification",
                 subtype="mail.mt_note"
             )
