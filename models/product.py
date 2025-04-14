@@ -3,13 +3,13 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class ProductTemplateInherit(models.Model):  # ✅ Nombre de clase personalizado
+class ProductTemplateInherit2(models.Model):  # ✅ Nombre de clase personalizado
     _inherit = ['product.template', 'mail.thread']  # ✅ Corrección válida
 
     @api.multi
     def write(self, vals):
         _logger.info("WRITE personalizado ejecutado para product.template")
-        res = super(ProductTemplateInherit, self).write(vals)
+        res = super(ProductTemplateInherit2, self).write(vals)
         for record in self:
             record.message_post(
                 body=_("El usuario <b>%s</b> realizó cambios en este producto.") % self.env.user.name,
