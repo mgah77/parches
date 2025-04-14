@@ -3,6 +3,8 @@ import Datetime
 import logging
 from odoo.tools.safe_eval import safe_eval
 
+_logger = logging.getLogger(__name__)
+
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
     _name = False  # necesario para que funcione la herencia sin redefinir el modelo
