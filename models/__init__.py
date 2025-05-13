@@ -4,3 +4,4 @@ from . import res_partner
 from . import hr
 from . import stock_picking
 from . import product
+from . import account.invoice
