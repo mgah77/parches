@@ -9,11 +9,11 @@ class UploadXMLWizardCustom(models.Model):
             .replace('<?xml version="1.0" encoding="ISO-8859-1"?>', "")
             .replace('<?xml version="1.0" encoding="ISO-8859-1" ?>', "")
             .replace('<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>', "")
-            .replace('<VlrCodigo>GASTOS_DESP</VlrCodigo>', "")
-            .replace('ds:', "")
-            .replace('<ImptoReten>', "")
-            .replace('</ImptoReten>', "")
-            .replace('<CodImpAdic>28</CodImpAdic>', "")
+	    .replace('<VlrCodigo>GASTOS_DESP</VlrCodigo>', "")
+	    .replace('ds:', "")
+	    .replace('<ImptoReten>', "")
+	    .replace('</ImptoReten>', "")
+        .replace('<CodImpAdic>28</CodImpAdic>', "")
         )
         if check:
             return xml
