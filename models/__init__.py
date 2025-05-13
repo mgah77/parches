@@ -5,3 +5,4 @@ from . import hr
 from . import stock_picking
 from . import product
 from . import account.invoice
+from . import upload_xml
