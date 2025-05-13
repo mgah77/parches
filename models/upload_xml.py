@@ -2,8 +2,7 @@ from odoo import models, fields, api, _
 
 class UploadXMLWizardParche(models.TransientModel):
     _inherit = 'sii.dte.upload_xml.wizard'
-
-
+    
     def _read_xml(self, mode="text", check=False):
         xml = (
             self._get_xml()
@@ -12,8 +11,10 @@ class UploadXMLWizardParche(models.TransientModel):
             .replace('<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>', "")
             .replace('<VlrCodigo>GASTOS_DESP</VlrCodigo>', "")
             .replace('ds:', "")
+            #modificacion para no tomar impuesto especifico
             .replace('<ImptoReten>', "")
             .replace('</ImptoReten>', "")
+            .replace('<CodImpAdic>28</CodImpAdic>', "")
         )
         if check:
             return xml
