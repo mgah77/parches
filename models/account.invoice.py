@@ -1,4 +1,4 @@
-from odoo import models, fields, api, _
+from odoo import models
 
 class AccountInvoiceCustom(models.Model):
     _inherit = 'account.invoice'
