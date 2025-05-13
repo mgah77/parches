@@ -16,6 +16,7 @@
 	    "security/groups.xml",
 	    "views/menu_informe.xml",
 	    "views/export.xml",
+        "views/libro2_view.xml",
         "views/account_payment_inherit.xml",
         "views/partner.xml",
         "security/ir.model.access.csv",
